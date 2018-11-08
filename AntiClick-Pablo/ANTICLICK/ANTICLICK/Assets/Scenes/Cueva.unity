@@ -156,10 +156,6 @@ Prefab:
       propertyPath: m_Name
       value: Plataforma 6x5 (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1492148314286082, guid: b0dc815358527bc42ae309242a073a05, type: 2}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0dc815358527bc42ae309242a073a05, type: 2}
   m_IsPrefabAsset: 0
@@ -432,10 +428,6 @@ Prefab:
     - target: {fileID: 4766886657026722, guid: 61561bbce12162041b8ab1966c010303, type: 2}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1791062196242870, guid: 61561bbce12162041b8ab1966c010303, type: 2}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61561bbce12162041b8ab1966c010303, type: 2}
@@ -1328,10 +1320,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1492148314286082, guid: b0dc815358527bc42ae309242a073a05, type: 2}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0dc815358527bc42ae309242a073a05, type: 2}
   m_IsPrefabAsset: 0
@@ -1480,11 +1468,6 @@ Prefab:
         type: 2}
       propertyPath: SaltoY
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114604280897418448, guid: db21bf813394a3949a11ad5c1caa9038,
-        type: 2}
-      propertyPath: ground
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db21bf813394a3949a11ad5c1caa9038, type: 2}
