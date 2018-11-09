@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 683aafb03f1ce154daecbbbec1efd06b
+  - enabled: 1
+    path: Assets/Scenes/SeleccionarNivel.unity
+    guid: 04f1f3a8142ed0e41bb7537232120bab
+  - enabled: 1
+    path: Assets/Scenes/Opciones.unity
+    guid: 1c292067d4a5d17488ca0e565f0a05fb
+  - enabled: 1
+    path: Assets/Scenes/Pradera.unity
+    guid: 59ba3379762235146a98a210b2d75a48
+  - enabled: 1
+    path: Assets/Scenes/Cueva.unity
+    guid: 6b01211e0e6818f469192990ae4a76ea
+  - enabled: 1
+    path: Assets/Scenes/Nieve.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  m_configObjects: {}
