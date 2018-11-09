@@ -6,11 +6,12 @@ public class HeroController : MonoBehaviour {
 	public float speed = 20f;
 	public float maxSpeed = 2.5f;
 	public bool ground;
-	public float jumpForce = 3f;
+	public float jumpForce = 2f;
 	
 	private Rigidbody2D rb2d;
 	private Animator anim;
 	private bool jump;
+	private int jumpDelay = 0; //Cuenta dos fotogramas antes de saltar para que coincida con la animación. -0.1
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
@@ -21,10 +22,16 @@ public class HeroController : MonoBehaviour {
 	void Update () {
 		anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 		anim.SetBool("Ground", ground);
+		anim.SetFloat("VSpeed", rb2d.velocity.y);
 		
 		if(Input.GetKeyDown(KeyCode.UpArrow) && ground){
 			jump = true;
 		}
+		if(jump && ground){
+		jumpDelay++;
+		}
+		anim.SetBool("Jump", jump);
+		
 	}
 	
 	void FixedUpdate(){
@@ -37,10 +44,15 @@ public class HeroController : MonoBehaviour {
 		if (hSpeed > 0.1f) { transform.localRotation = Quaternion.Euler(0f, 0f, 0f);}
 		if (hSpeed < -0.1f) { transform.localRotation = Quaternion.Euler(0f, 180f, 0f);}
 		
-		if(jump){
+		if(jumpDelay>9 && ground){
 			rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 			jump = false;
+			jumpDelay = 0;
 		}
-		Debug.Log(rb2d.velocity.x);
+		if(Mathf.Abs(rb2d.velocity.y)>0.1){
+			Debug.Log(rb2d.velocity.y);
+		}
 	}
+	
+	
 }
