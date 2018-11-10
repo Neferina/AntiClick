@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: a28c7a81d98bb7045ac36cbf78b875af
+guid: 6d1e78e787dc50745bde6541c3e25fa1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BotonOpciones0
-    21300002: BotonOpciones1
+    21300000: BotonSelectLevel_1
+    21300002: BotonSelectLevel_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotonOpciones0
+      name: BotonSelectLevel_1
       rect:
         serializedVersion: 2
         x: 31
@@ -155,13 +155,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4481e9d4f4abb4f459cdaf50f26bb9db
+      spriteID: 390d358cffaa7a8428851b7f4674effe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BotonOpciones1
+      name: BotonSelectLevel_3
       rect:
         serializedVersion: 2
         x: 31
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c657a197f2773d4c89390d3f8247740
+      spriteID: b17b6149d1c8d4e49aee0ec41fdbc2c5
       vertices: []
       indices: 
       edges: []
@@ -183,7 +183,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7e12720a6e0e79742b9eac5b951a81d3
+    spriteID: 934f986d33e381c469d9302b66da643f
     vertices: []
     indices: 
     edges: []

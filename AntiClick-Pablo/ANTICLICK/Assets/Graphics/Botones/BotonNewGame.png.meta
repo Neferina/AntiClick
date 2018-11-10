@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 1f65d1c7112b71346b0e7bd62b828e8d
+guid: efc9b95d10c64244385a1e71600c5272
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BotonNuevaPartida0
-    21300002: BotonNuevaPartida1
+    21300000: BotonNewGame_1
+    21300002: BotonNewGame_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotonNuevaPartida0
+      name: BotonNewGame_1
       rect:
         serializedVersion: 2
         x: 31
@@ -155,13 +155,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270a688a062440d40bc0120ffcc12a80
+      spriteID: 8638b6d6a49cca245a53183cb0ba726c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BotonNuevaPartida1
+      name: BotonNewGame_3
       rect:
         serializedVersion: 2
         x: 31
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2689d516330dbe245b2e1aab53ea7bc9
+      spriteID: 5b0b46c4e334e2544b51d503418c1f32
       vertices: []
       indices: 
       edges: []
@@ -183,7 +183,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 87fc1eaf4fa887a45bc38ef84207ac5f
+    spriteID: 1dd8beecd1e7d6043a86976f5b247982
     vertices: []
     indices: 
     edges: []
