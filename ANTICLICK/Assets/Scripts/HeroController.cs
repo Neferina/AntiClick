@@ -7,6 +7,8 @@ public class HeroController : MonoBehaviour {
 	public float maxSpeed = 2.5f;
 	public bool ground;
 	public float jumpForce = 2f;
+
+	public bool tocado = false; //detecta cuando es tocado por un enemigo (para cambiar el color y detectar damage)
 	
 	private Rigidbody2D rb2d;
 	private Animator anim;
