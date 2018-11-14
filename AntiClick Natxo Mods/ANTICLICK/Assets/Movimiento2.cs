@@ -23,6 +23,8 @@ public class Movimiento2 : MonoBehaviour {
 
     public int jumps;
 
+    public ParticleSystem dashEffect;
+
     // Use this for initialization
     void Start () {
 
@@ -51,10 +53,12 @@ public class Movimiento2 : MonoBehaviour {
             if (facingRight == true)
             {
                 rb.velocity = Vector2.right * dashSpeed;
+                dashEffect.Play();
                 dashCD = dashCDMax;
             }else if (facingRight == false)
             {
                 rb.velocity = Vector2.left * dashSpeed;
+                dashEffect.Play();
                 dashCD = dashCDMax;
             }
 
