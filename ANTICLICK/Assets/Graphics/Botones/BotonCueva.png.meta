@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 1f65d1c7112b71346b0e7bd62b828e8d
+guid: 08d467c9f9a69514285c4ed530714fb1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BotonNuevaPartida0
-    21300002: BotonNuevaPartida1
+    21300000: BotonCueva
+    21300002: BotonCuevaPulsado
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -141,32 +141,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotonNuevaPartida0
+      name: BotonCueva
       rect:
         serializedVersion: 2
         x: 31
         y: 159
-        width: 450
+        width: 194
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270a688a062440d40bc0120ffcc12a80
+      spriteID: de541e21841d0b444963cf20363a4959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BotonNuevaPartida1
+      name: BotonCuevaPulsado
       rect:
         serializedVersion: 2
         x: 31
         y: 31
-        width: 450
+        width: 194
         height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2689d516330dbe245b2e1aab53ea7bc9
+      spriteID: 21d51344ee5775c4597b7ccb701bd4cc
       vertices: []
       indices: 
       edges: []
@@ -183,7 +183,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 87fc1eaf4fa887a45bc38ef84207ac5f
+    spriteID: 3ea3b806ca6b0754296e6b6aebda81f5
     vertices: []
     indices: 
     edges: []
