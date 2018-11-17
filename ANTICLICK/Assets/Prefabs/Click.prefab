@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5982b4efd66a44dbdbe7f12f8f4f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaltoX: -10
-  SaltoY: 10
+  SaltoX: -2
+  SaltoY: 7
 --- !u!114 &114056816096773818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,8 +138,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   maxSpeed: 2.5
+  maxDashSpeed: 8
   ground: 1
+  right: 1
   jumpForce: 2.3
+  tocado: 0
+  dashCoolDown: 0
+  dashDelay: 0
 --- !u!114 &114469666459747734
 MonoBehaviour:
   m_ObjectHideFlags: 1
