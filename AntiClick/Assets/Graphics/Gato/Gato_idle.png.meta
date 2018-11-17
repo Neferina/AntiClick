@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 51110bcd488e99a4ca4c519285062c30
+guid: b9f63e03a1686434bb1f4ea25a785470
 TextureImporter:
   fileIDToRecycleName:
-    21300000: click_dash_0
-    21300002: click_dash_1
-    21300004: click_dash_2
-    21300006: click_dash_3
+    21300000: Gato_idle_0
+    21300002: Gato_idle_2
+    21300004: Gato_idle_3
+    21300006: Gato_idle_5
+    21300008: Gato_idle_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -47,9 +48,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
-  spritePixelsToUnits: 32
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +68,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,81 +89,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: click_dash_0
+      name: Gato_idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 36
+        y: 402
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d03ff1a3895a884ca5a6cf9511629f3
+      spriteID: b2dfdb2dc05c3b947a83fed6b7e4e9df
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_1
+      name: Gato_idle_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 228
+        y: 402
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adcf5533dd329cd498d1b68228a8ec77
+      spriteID: 9a4e8582dd903f14caf31b6f18e6d7d7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_2
+      name: Gato_idle_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 36
+        y: 210
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fe44958dc0fa5743b10905d7f807767
+      spriteID: e23b9e13f744165468c7c239412e505d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_3
+      name: Gato_idle_5
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 31
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 228
+        y: 210
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de46dab5594aaa3479907add4daec61f
+      spriteID: 683163f4fba159145a7f44f3f2c8a746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gato_idle_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 18
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855fa35c0f27dfa408ef4811a421a8d1
       vertices: []
       indices: 
       edges: []
@@ -170,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 83561a60eed7bff4a92d01e70823ae10
+    spriteID: 8c57a37481f588d45b5f210f7d4ca55d
     vertices: []
     indices: 
     edges: []

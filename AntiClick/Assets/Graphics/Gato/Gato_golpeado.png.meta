@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: 51110bcd488e99a4ca4c519285062c30
+guid: aeb2695393cdb1e429ab807c75550405
 TextureImporter:
   fileIDToRecycleName:
-    21300000: click_dash_0
-    21300002: click_dash_1
-    21300004: click_dash_2
-    21300006: click_dash_3
+    21300000: Gato_golpeado_0
+    21300002: Gato_golpeado_1
+    21300004: Gato_golpeado_2
+    21300006: Gato_golpeado_3
+    21300008: Gato_golpeado_4
+    21300010: Gato_golpeado_5
+    21300012: Gato_golpeado_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -47,9 +50,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
-  spritePixelsToUnits: 32
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,81 +91,141 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: click_dash_0
+      name: Gato_golpeado_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+        x: 36
+        y: 402
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 36, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d03ff1a3895a884ca5a6cf9511629f3
+      spriteID: cef9d302f5dd9d04fad464106e898498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_1
+      name: Gato_golpeado_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 227
+        y: 402
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adcf5533dd329cd498d1b68228a8ec77
+      spriteID: 0ad3a9783cf45b14f937020f009c2329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_2
+      name: Gato_golpeado_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 420
+        y: 402
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fe44958dc0fa5743b10905d7f807767
+      spriteID: faf799b7cfe1e4745b530441f8c2bb0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: click_dash_3
+      name: Gato_golpeado_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 31
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 36
+        y: 210
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de46dab5594aaa3479907add4daec61f
+      spriteID: 9b665269a084fc149adeb551652fbab9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gato_golpeado_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 210
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bee5cb3082b48478ce3048e79fb4b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gato_golpeado_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 210
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070403681df298c41b1d8cc83c86c615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gato_golpeado_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 18
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bc4d21ba6a32841b1442b9a3621a2f
       vertices: []
       indices: 
       edges: []
@@ -170,7 +233,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 83561a60eed7bff4a92d01e70823ae10
+    spriteID: 9df345bab8e18524f92414bb107fe1d4
     vertices: []
     indices: 
     edges: []
