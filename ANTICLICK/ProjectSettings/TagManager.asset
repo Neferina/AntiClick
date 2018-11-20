@@ -9,6 +9,7 @@ TagManager:
   - Recolectable
   - enemyWeakPoint
   - massa
+  - Cat
   layers:
   - Default
   - TransparentFX

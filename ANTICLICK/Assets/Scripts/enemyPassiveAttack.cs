@@ -10,7 +10,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 	private HeroController hero;
 
     public Collider2D coll;
-	
+    public int cofre = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -35,13 +35,18 @@ public class enemyPassiveAttack : MonoBehaviour {
 			hero.tocado = false;
 			Destroy(col.gameObject); //Se destruye
 		}
-	}
+        if ((col.gameObject.tag == "Enemy") && (hero.isGrounded == false))
+        { //2. Si CLCIK salta sobre el GATETE
+            hero.tocado = false;
+            Destroy(col.gameObject); //Se destruye
+        }
+    }
 
 	void OnCollisionExit2D(Collision2D col){
-		if(col.gameObject.tag == "Enemy"){
+		if(col.gameObject.tag == "Cat"){
 			hero.tocado = false;
-			
-		}
+            cofre++;
+        }
 	
 	}
 
