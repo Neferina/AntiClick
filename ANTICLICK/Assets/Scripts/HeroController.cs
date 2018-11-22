@@ -116,8 +116,10 @@ public class HeroController : MonoBehaviour {
 			//Debug.Log(rb2d.velocity.y);
 		}
 
-        if (SceneManager.GetActiveScene().name == "Pradera" || SceneManager.GetActiveScene().name == "Cueva")
+        if (SceneManager.GetActiveScene().name == "Pradera")
             distanciaGameOver = -13.0f;
+        if (SceneManager.GetActiveScene().name == "Cueva")
+            distanciaGameOver = -24.0f;
         if (SceneManager.GetActiveScene().name == "Nieve")
             distanciaGameOver = -21.0f;
         if (SceneManager.GetActiveScene().name == "Castillo")
@@ -129,11 +131,6 @@ public class HeroController : MonoBehaviour {
         }
 
         
-
-        
-
-
 	}
-	
 	
 }
