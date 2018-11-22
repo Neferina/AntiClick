@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class ChangeSceneFromMenu: MonoBehaviour {
 
-    public string escena;
+    
 
     // Use this for initialization
     void Start () {
@@ -18,7 +18,7 @@ public class ChangeSceneFromMenu: MonoBehaviour {
 		
 	}
 
-    void OnMouseDown()
+	public void CargarNivel(string escena)
     {
         SceneManager.LoadScene(escena);
     }

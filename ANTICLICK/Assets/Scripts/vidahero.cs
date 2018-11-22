@@ -11,7 +11,10 @@ public class vidahero : MonoBehaviour {
 
 	public float SaltoX, SaltoY;
 	private HeroController hero;
-    LifeSprites corazones;
+    public LifeSprites corazones;
+
+	bool invencible=false;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -27,17 +30,33 @@ public class vidahero : MonoBehaviour {
 		if(hero.tocado)
 		{
 			GetComponent<SpriteRenderer> ().color = Color.red;
-            cantidadVidas--;
-            corazones.cambioVida(cantidadVidas);
-			
-			//rb2d.velocity = new Vector2 (SaltoX, SaltoY); //saltito :)
-				//para que funcione bien, hay que saber la direccion en la que va CLICK
-				//y multiplicar por -1 o +1 para que salte siempre en direccion contraria
-				//POR TERMINAR
-		}
-	
+			if (!invencible) {
+				cantidadVidas--;
+				Debug.Log ("Tocado");
+				corazones.cambioVida(cantidadVidas);
+				StartCoroutine (Invencible ());
+				hero.tocado = false;
+			}
+            
+
+            if (hero.right)
+            {
+                rb2d.velocity = new Vector2(SaltoX, SaltoY);
+            }else if(hero.right != true)
+            {
+                rb2d.velocity = new Vector2(-SaltoX, SaltoY);
+            }
+
+        }
+
+        if (cantidadVidas < 1)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
 		
 	}
+
+
 	public void  OnCollisionExit2D(Collision2D col) {		
 		if(!hero.tocado) //restablece o mantiene el color normal de CLICK
 		{
@@ -46,5 +65,12 @@ public class vidahero : MonoBehaviour {
 
 		}
 
+	}
+
+	IEnumerator Invencible()
+	{
+		invencible = true;
+		yield return new WaitForSeconds (1.5f);
+		invencible = false;
 	}
 }

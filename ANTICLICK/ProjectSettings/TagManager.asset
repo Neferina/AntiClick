@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Recolectable
   - enemyWeakPoint
+  - massa
+  - Cat
+  - PasarNivel
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 

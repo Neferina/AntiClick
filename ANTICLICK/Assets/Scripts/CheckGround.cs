@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckGround : MonoBehaviour {
-
+    /*
 	private HeroController hero;
 	// Use this for initialization
 	void Start () {
@@ -20,4 +20,5 @@ public class CheckGround : MonoBehaviour {
 			hero.ground = false;
 		}
 	}
+    */
 }
