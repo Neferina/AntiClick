@@ -121,7 +121,7 @@ public class HeroController : MonoBehaviour {
         if (SceneManager.GetActiveScene().name == "Cueva")
             distanciaGameOver = -24.0f;
         if (SceneManager.GetActiveScene().name == "Nieve")
-            distanciaGameOver = -21.0f;
+            distanciaGameOver = -40.0f;
         if (SceneManager.GetActiveScene().name == "Castillo")
             distanciaGameOver = -8.0f;
 
