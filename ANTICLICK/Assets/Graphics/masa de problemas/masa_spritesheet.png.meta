@@ -1,0 +1,1884 @@
+fileFormatVersion: 2
+guid: 49d1a16acd4bdf64099190eb3633969b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: masa_spritesheet_0
+    21300002: masa_spritesheet_1
+    21300004: masa_spritesheet_2
+    21300006: masa_spritesheet_3
+    21300008: masa_spritesheet_4
+    21300010: masa_spritesheet_5
+    21300012: masa_spritesheet_6
+    21300014: masa_spritesheet_7
+    21300016: masa_spritesheet_8
+    21300018: masa_spritesheet_9
+    21300020: masa_spritesheet_10
+    21300022: masa_spritesheet_11
+    21300024: masa_spritesheet_12
+    21300026: masa_spritesheet_13
+    21300028: masa_spritesheet_14
+    21300030: masa_spritesheet_15
+    21300032: masa_spritesheet_16
+    21300034: masa_spritesheet_17
+    21300036: masa_spritesheet_18
+    21300038: masa_spritesheet_19
+    21300040: masa_spritesheet_20
+    21300042: masa_spritesheet_21
+    21300044: masa_spritesheet_22
+    21300046: masa_spritesheet_23
+    21300048: masa_spritesheet_24
+    21300050: masa_spritesheet_25
+    21300052: masa_spritesheet_26
+    21300054: masa_spritesheet_27
+    21300056: masa_spritesheet_28
+    21300058: masa_spritesheet_29
+    21300060: masa_spritesheet_30
+    21300062: masa_spritesheet_31
+    21300064: masa_spritesheet_32
+    21300066: masa_spritesheet_33
+    21300068: masa_spritesheet_34
+    21300070: masa_spritesheet_35
+    21300072: masa_spritesheet_36
+    21300074: masa_spritesheet_37
+    21300076: masa_spritesheet_38
+    21300078: masa_spritesheet_39
+    21300080: masa_spritesheet_40
+    21300082: masa_spritesheet_41
+    21300084: masa_spritesheet_42
+    21300086: masa_spritesheet_43
+    21300088: masa_spritesheet_44
+    21300090: masa_spritesheet_45
+    21300092: masa_spritesheet_46
+    21300094: masa_spritesheet_47
+    21300096: masa_spritesheet_48
+    21300098: masa_spritesheet_49
+    21300100: masa_spritesheet_50
+    21300102: masa_spritesheet_51
+    21300104: masa_spritesheet_52
+    21300106: masa_spritesheet_53
+    21300108: masa_spritesheet_54
+    21300110: masa_spritesheet_55
+    21300112: masa_spritesheet_56
+    21300114: masa_spritesheet_57
+    21300116: masa_spritesheet_58
+    21300118: masa_spritesheet_59
+    21300120: masa_spritesheet_60
+    21300122: masa_spritesheet_61
+    21300124: masa_spritesheet_62
+    21300126: masa_spritesheet_63
+    21300128: masa_spritesheet_64
+    21300130: masa_spritesheet_65
+    21300132: masa_spritesheet_66
+    21300134: masa_spritesheet_67
+    21300136: masa_spritesheet_68
+    21300138: masa_spritesheet_69
+    21300140: masa_spritesheet_70
+    21300142: masa_spritesheet_71
+    21300144: masa_spritesheet_72
+    21300146: masa_spritesheet_73
+    21300148: masa_spritesheet_74
+    21300150: masa_spritesheet_75
+    21300152: masa_spritesheet_76
+    21300154: masa_spritesheet_77
+    21300156: masa_spritesheet_78
+    21300158: masa_spritesheet_79
+    21300160: masa_spritesheet_80
+    21300162: masa_spritesheet_81
+    21300164: masa_spritesheet_82
+    21300166: masa_spritesheet_83
+    21300168: masa_spritesheet_84
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: masa_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 106.04492
+        y: 3238.2996
+        width: 223.39844
+        height: 301.64453
+      alignment: 9
+      pivot: {x: 0.49666905, y: 0.49628013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab2d6e04302522468bc7a980a5791ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 487.9957
+        y: 3114
+        width: 356.76944
+        height: 523.9346
+      alignment: 9
+      pivot: {x: 0.49753228, y: 0.49719948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4a5954e8809a84280cd6e8e0c31dc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1045.6606
+        y: 3165.9224
+        width: 225.17676
+        height: 443.9099
+      alignment: 9
+      pivot: {x: 0.49445316, y: 0.49689674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b851b674b0a254f8e419e093147aa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1438.6445
+        y: 3218.5725
+        width: 317.6494
+        height: 338.98926
+      alignment: 9
+      pivot: {x: 0.49537426, y: 0.4968513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796148384fc2d1b4081e0c4b3d9becbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1916.0474
+        y: 3266.558
+        width: 150.4873
+        height: 274.96948
+      alignment: 9
+      pivot: {x: 0.48809776, y: 0.49620652}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f729c939cc758f49a23d7c02fd50020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2248.98
+        y: 3291.0002
+        width: 276.74585
+        height: 193.16699
+      alignment: 9
+      pivot: {x: 0.49691808, y: 0.49438962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343d77761f39dfa429c9b6cfae856878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 3378
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf5bea6bb8fb6e45b9a11cd0ce805d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2713.5671
+        y: 3220.3508
+        width: 159.3789
+        height: 303.42285
+      alignment: 9
+      pivot: {x: 0.5172116, y: 0.49320254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d11f562cf5484c856ce76b8538b36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2857
+        y: 3309
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb375f868c9f4b40b498f0e460542f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 3176
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cedd4365ba7c244bebc8e1925db646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 3164
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100338b0fcfe0a044a592eab67ec78f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1461.5264
+        y: 2841.5764
+        width: 235.84668
+        height: 218.06348
+      alignment: 9
+      pivot: {x: 0.49385315, y: 0.56141263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefa86a8cd882ca40add1d7b7c2b62c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1778.9799
+        y: 2825.581
+        width: 271.4132
+        height: 266.07812
+      alignment: 9
+      pivot: {x: 0.49378592, y: 0.49579027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b26ff276d4a1744b9e1fcadb45d6eb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2128.645
+        y: 2832.468
+        width: 191.38867
+        height: 264.2998
+      alignment: 9
+      pivot: {x: 0.49822688, y: 0.49576932}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f071679363b914888ff88c562fa4dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 3075
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a0b0722c5e31c49b4df34b14f64109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3058
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ce4066debf741469cfa1252cc3b21d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 380.76422
+        y: 2832.468
+        width: 232.29004
+        height: 241.18164
+      alignment: 9
+      pivot: {x: 0.49393326, y: 0.49560982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a59d94abe73eb408d0b526401c43cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1115.8613
+        y: 2873.5667
+        width: 232.29004
+        height: 200.28027
+      alignment: 9
+      pivot: {x: 0.48705778, y: 0.49397328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3c40059ae472245a34ebe7170753b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2397.6704
+        y: 2857.1284
+        width: 162.93555
+        height: 216.28516
+      alignment: 9
+      pivot: {x: 0.48380694, y: 0.49181062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c529419afa1a4ba7a413fcf9d019f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 95.078964
+        y: 2880.454
+        width: 189.61034
+        height: 171.82715
+      alignment: 9
+      pivot: {x: 0.50324804, y: 0.49495173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097950576f5c3354cb3ea8aafc3a9c1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 3026
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d0ad5ff889f5e42aab564bae19de7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 3032
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1475453ec7495f448968463ac79aa6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 3032
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cc25cf91f4f3a4fa2d542e32fd47a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2656.4739
+        y: 2817.3645
+        width: 308.7578
+        height: 235.84668
+      alignment: 9
+      pivot: {x: 0.49561784, y: 0.4860594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4d3453f0c347e41822e097aba50ebd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 717.7661
+        y: 2919.3306
+        width: 322.98438
+        height: 79.35449
+      alignment: 9
+      pivot: {x: 0.49920028, y: 0.4936007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3d16d42fea233468560da562ddb125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 2987
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa27ac8bd02ac484ea5960b27c110c40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 2973
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b0d701001a6a346b19a85c76930558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 2956
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5a8af65e2090f47be7bfc2ea7e768c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2925
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51a4a093493cbe4aadaff714f542fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 2920
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7998923c1862e34fbf31b9b4ea9b43e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 2909
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1babafab3a7769341a0f15893d3fc4e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2883
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a3f8c74f915fa4ea9e0f15e59c541b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2886
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de054725b5497634abe30d601a588bef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 2882
+        width: 5
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e34a889aa78df8459925d3a2e91eff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 2841
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ec5ecc64e83c04eb99cf44fbbc77d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 2841
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8c942f64f3d7a48abdf54e8abdf6ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 65.08906
+        y: 2462.3586
+        width: 251.85156
+        height: 271.4131
+      alignment: 9
+      pivot: {x: 0.49398518, y: 0.49791673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118cf1e46022c4c46815b374d496446b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 385.42917
+        y: 2505.6792
+        width: 223.39847
+        height: 187.83203
+      alignment: 9
+      pivot: {x: 0.4949488, y: 0.49150723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820da2a1bca24e642a5372efc66e6b2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 684.66547
+        y: 2434.3684
+        width: 353.21576
+        height: 257.18652
+      alignment: 9
+      pivot: {x: 0.49781054, y: 0.4943167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353c8bd68d215e542b60d7f51c664edc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1115.8616
+        y: 2475.9111
+        width: 175.38367
+        height: 177.16187
+      alignment: 9
+      pivot: {x: 0.48259017, y: 0.48875567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197963d41c916574294a37b5c358d16e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1393.1036
+        y: 2409.7085
+        width: 278.52637
+        height: 308.7578
+      alignment: 9
+      pivot: {x: 0.50047815, y: 0.49485874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177a2523d02b0b5479fcb0c20a654a14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1824.7428
+        y: 2462.3586
+        width: 178.94043
+        height: 216.28516
+      alignment: 9
+      pivot: {x: 0.49322045, y: 0.49999437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2ba706421d5bf47817c09da83c6fc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 2623
+        width: 61
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1df094bcdf4304bbc668b7b44f0c0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 2175.2937
+        y: 2418.817
+        width: 246.5166
+        height: 292.7527
+      alignment: 9
+      pivot: {x: 0.63568157, y: 0.4942153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee951df1141da3941acc063b5a53d53c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 2543.6267
+        y: 2486.797
+        width: 132.7041
+        height: 139.81738
+      alignment: 9
+      pivot: {x: 0.46624818, y: 0.53428894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe75a0e9dbb7d54ebdec92587620602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 2777.5466
+        y: 2477.243
+        width: 106.0293
+        height: 171.82715
+      alignment: 9
+      pivot: {x: 0.4899884, y: 0.4990878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993aa601d52d60746bb8bfe02e41195e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 2508
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e81b73093373954e8d647a2665fc4fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 93.078636
+        y: 2126.462
+        width: 273.19138
+        height: 210.9502
+      alignment: 9
+      pivot: {x: 0.5011921, y: 0.49555817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2bfeb868d2e734aa686ef5c9b8f465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 504.28223
+        y: 2160.2305
+        width: 187.83203
+        height: 141.5957
+      alignment: 9
+      pivot: {x: 0.4962826, y: 0.48567528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b8303020717e745a2f3367b146a087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 786.4132
+        y: 1898.0863
+        width: 250.07324
+        height: 468.80652
+      alignment: 9
+      pivot: {x: 0.492203, y: 0.5010888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbc2157a94ce0a49bacc33b7b9f2043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1265.1451
+        y: 2028.0472
+        width: 214.50684
+        height: 276.74792
+      alignment: 9
+      pivot: {x: 0.49581105, y: 0.49305794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0937b28e0d37a445a8a9fe3c0147b04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 1630.5828
+        y: 2030.4905
+        width: 314.09265
+        height: 269.63477
+      alignment: 9
+      pivot: {x: 0.49640563, y: 0.49514863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfe88b3d1b66d84f938720010624e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 2034.8972
+        y: 2051.151
+        width: 207.39355
+        height: 187.83203
+      alignment: 9
+      pivot: {x: 0.4923142, y: 0.5023058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9e764cb9c282644952e26390ac8a9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 2325.0256
+        y: 1820.3325
+        width: 308.7578
+        height: 516.8213
+      alignment: 9
+      pivot: {x: 0.4938316, y: 0.49856207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc1272626547c049858b700611c484c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 2770.6597
+        y: 2051.151
+        width: 205.61523
+        height: 214.50684
+      alignment: 9
+      pivot: {x: 0.49286273, y: 0.4981141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3992b41e4926d95429d42c460b3ff20a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 203.71071
+        y: 1783.2336
+        width: 113.14256
+        height: 136.26086
+      alignment: 9
+      pivot: {x: 0.49308845, y: 0.4863198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa4fb35c0ae5b742b1feedf88df534f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 430.97052
+        y: 1657.9381
+        width: 182.49707
+        height: 184.27551
+      alignment: 9
+      pivot: {x: 0.49058038, y: 0.49144766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffa3a5406129a94c9c6a72d2ba0cc97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 769.305
+        y: 1491.1001
+        width: 285.6396
+        height: 369.22058
+      alignment: 9
+      pivot: {x: 0.49606222, y: 0.49401304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6586d3925b5f8ed45a5a9ba3e9377faa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 1265.1453
+        y: 1450.0013
+        width: 210.9502
+        height: 449.245
+      alignment: 9
+      pivot: {x: 0.49705923, y: 0.49527216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4e226fc8aa9bf4b8181ca08171fc3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 1715.2219
+        y: 1584.4059
+        width: 331.87598
+        height: 274.9696
+      alignment: 9
+      pivot: {x: 0.49801156, y: 0.49494195}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab620c4f88ba93346a3631c78f54b490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 2283.9287
+        y: 1527.7551
+        width: 159.3789
+        height: 296.30957
+      alignment: 9
+      pivot: {x: 0.48984706, y: 0.49524176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff42879be9743d489f443a618636914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 1772
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef369629203941d408a0aa4ad8d49e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 2807.3147
+        y: 1616.8394
+        width: 130.92578
+        height: 175.38367
+      alignment: 9
+      pivot: {x: 0.494059, y: 0.4912688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad43e15231abba94a82388033766298e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 150.17201
+        y: 1509.0951
+        width: 125.590805
+        height: 125.59082
+      alignment: 9
+      pivot: {x: 0.4962783, y: 0.48494714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9e229106a00d14589e9dc550b5e900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 2594.2732
+        y: 1616.8394
+        width: 130.92578
+        height: 141.5957
+      alignment: 9
+      pivot: {x: 0.49055704, y: 0.49196777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92beb340677a25345b3377efe06ec905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 75.99929
+        y: 1090
+        width: 290.97214
+        height: 283.86133
+      alignment: 9
+      pivot: {x: 0.49661353, y: 0.49672142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6fdd2371887324983191e4dd94b207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 448.96484
+        y: 1088.5569
+        width: 299.8662
+        height: 324.7627
+      alignment: 9
+      pivot: {x: 0.49533808, y: 0.49403146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aeb200eacd76f4eabbe130e34df0f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 900.5963
+        y: 920.1626
+        width: 219.8418
+        height: 493.70312
+      alignment: 9
+      pivot: {x: 0.49537298, y: 0.4989586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b79c5cbce4a784b92643f8684dcab0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 1249.1497
+        y: 798.86664
+        width: 424.34863
+        height: 595.0673
+      alignment: 9
+      pivot: {x: 0.4980583, y: 0.49680638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed99c082bd1924a4a844781fa395eb13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 1746.546
+        y: 1027.4634
+        width: 378.11218
+        height: 406.56543
+      alignment: 9
+      pivot: {x: 0.49311814, y: 0.49939442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff49c1a9b2e5e644bd4b3f702366a83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 2265.7048
+        y: 1177.7963
+        width: 63.34961
+        height: 82.91113
+      alignment: 9
+      pivot: {x: 0.47821796, y: 0.47887096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64b2493cf7c072418f1836d08c8642a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 2409.6648
+        y: 1091.444
+        width: 326.54077
+        height: 251.85156
+      alignment: 9
+      pivot: {x: 0.4986673, y: 0.49654657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645b5de1c375293458adf7bcb9f0de0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 112.85205
+        y: 707.5609
+        width: 202.0586
+        height: 230.51166
+      alignment: 9
+      pivot: {x: 0.490689, y: 0.49862593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d49add8d206f97409d91ded7a0437e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 486.0627
+        y: 473.8559
+        width: 346.1025
+        height: 484.81152
+      alignment: 9
+      pivot: {x: 0.49822623, y: 0.49533483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0bed48217cf69408ce10a533e53469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 901.2634
+        y: 335.22998
+        width: 333.6543
+        height: 481.25482
+      alignment: 9
+      pivot: {x: 0.4937343, y: 0.50029635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c24ccb5166bad4182f25971ecb416a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 1320.0151
+        y: 379.66113
+        width: 442.13184
+        height: 394.1172
+      alignment: 9
+      pivot: {x: 0.4986855, y: 0.49817383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4b867fc0e49e140ae567ad99177b66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 1875.1705
+        y: 686.9009
+        width: 237.62488
+        height: 242.96002
+      alignment: 9
+      pivot: {x: 0.4979665, y: 0.49225843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ffdfe3837cb714785f6eb5a3a2b590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 2188.181
+        y: 671.1275
+        width: 237.625
+        height: 257.18646
+      alignment: 9
+      pivot: {x: 0.49792257, y: 0.49719787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b210cd0bb84c7b64aac2203036b858b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 2526.2944
+        y: 568.0483
+        width: 193.16699
+        height: 410.122
+      alignment: 9
+      pivot: {x: 0.4954538, y: 0.49485666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca033b21ef02db54b88aceea63a9fa24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 103.96546
+        y: 327.23242
+        width: 210.9502
+        height: 257.18652
+      alignment: 9
+      pivot: {x: 0.49317113, y: 0.49873367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f756f8bf2daf44aa0281fc4bb06183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 485
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11910914afc93d4a813be24d76c3a9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 1890.9437
+        y: 335.22998
+        width: 175.38391
+        height: 250.07324
+      alignment: 9
+      pivot: {x: 0.4906737, y: 0.49693438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617ca8c6a03040e47a9628d454f30dc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 2211.0625
+        y: 428.31403
+        width: 118.47754
+        height: 106.0293
+      alignment: 9
+      pivot: {x: 0.49745715, y: 0.47803715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f303177a87b2e594abe3aecb9a957103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 2379.8965
+        y: 261.9194
+        width: 312.31445
+        height: 255.40817
+      alignment: 9
+      pivot: {x: 0.49662614, y: 0.49364355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c978cb87427f5674a89e7a1e49cb75c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: masa_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 122.62553
+        y: 69.97801
+        width: 157.60059
+        height: 194.9453
+      alignment: 9
+      pivot: {x: 0.49095297, y: 0.49255863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a57b7835a421ab4f937ba56e905fdb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 377c981ea8018e242b1370fd3810d13c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636787017367757387
+  assetBundleName: 
+  assetBundleVariant: 
