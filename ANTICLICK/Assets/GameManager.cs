@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement; //Metemos el scene manager
 public class GameManager : MonoBehaviour {
 
     bool gameEnd = false;
+    public Vector2 lastCheckPointPos;
+    private static GameManager instance;
+
 
     public void EndGame()
     {
@@ -18,6 +21,19 @@ public class GameManager : MonoBehaviour {
             Restart();
         }
         
+    }
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Restart()

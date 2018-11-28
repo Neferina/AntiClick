@@ -5,7 +5,10 @@ using UnityEngine;
 public class MassaMove : MonoBehaviour {
 
 
-    public float speed;
+    private float speed = 2.5f;
+    public float minSpeed;
+    public float ratio;
+    public GameObject hero;
     public Rigidbody2D rb;
 
 
@@ -16,7 +19,13 @@ public class MassaMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (Mathf.Abs(hero.transform.position.x - transform.position.x) > 12)
+        {
+            speed = Mathf.Abs(hero.transform.position.x - transform.position.x) / 3 +  5f;
+        }
+        else{
+            speed = Mathf.Abs(hero.transform.position.x - transform.position.x) / ratio + minSpeed;
+        }
         rb.velocity = Vector2.right * speed;
 
 

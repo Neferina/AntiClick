@@ -11,6 +11,8 @@ TagManager:
   - massa
   - Cat
   - PasarNivel
+  - checkpoint
+  - GM
   layers:
   - Default
   - TransparentFX

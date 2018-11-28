@@ -14,11 +14,23 @@ public class PasarNivel : MonoBehaviour {
         {
             SceneManager.LoadScene("Cueva");
         }
+        if (SceneManager.GetActiveScene().name == "Cueva")
+        {
+            SceneManager.LoadScene("Nieve");
+        }
+        if (SceneManager.GetActiveScene().name == "Nieve")
+        {
+            SceneManager.LoadScene("Castillo");
+        }
+        if (SceneManager.GetActiveScene().name == "Castillo")
+        {
+            SceneManager.LoadScene("Menu Principal");
+        }
     }
 
     void Update()
     {
-        if(Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.2f && Mathf.Abs(hero.transform.position.y - transform.position.y)< 0.4f)
+        if(Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.4f)
         {
             pasarNivel();
         }

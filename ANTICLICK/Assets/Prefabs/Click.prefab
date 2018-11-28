@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1907804786773490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.58, y: 1.04, z: 0}
+  m_LocalPosition: {x: -2.66, y: -1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274248893624128}
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5982b4efd66a44dbdbe7f12f8f4f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidadVidas: 0
   SaltoX: -10
   SaltoY: 3
   corazones: {fileID: 0}
@@ -175,11 +176,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1907804786773490}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98094b06a4e905d4c8c11b6bc254f088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 0}
+  cofre: 0
 --- !u!114 &114410231677919788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,14 +194,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a03d8a87864564ebcdc8ad3220554d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  maxSpeed: 3.5
+  speed: 30
+  maxSpeed: 5
   maxDashSpeed: 8
   ground: 1
   right: 1
-  jumpForce: 8
+  jumpForce: 11
   moveInput: 0
   hSpeed: 0
+  distanciaGameOver: 0
   isGrounded: 0
   groundCheck: {fileID: 4274248893624128}
   CheckRadius: 0.2
@@ -206,8 +210,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   tocado: 0
+  teclasalto: 0
   dashCoolDown: 0
   dashDelay: 0
+  DashEffect: {fileID: 1087272566330098, guid: 9cc95e50ef656704ba87ef20815a0f2f, type: 2}
 --- !u!114 &114487687492215420
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,7 +260,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300034, guid: a2186c84b3431444485d719ea5d89451, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

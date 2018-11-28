@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class HeroController : MonoBehaviour {
-	public float speed = 10f;
+	public float speed = 14f;
     public float maxSpeed = 2.5f;
     public float maxDashSpeed = 8.0f;
     public bool ground;
     public bool right = true;
-	public float jumpForce = 2f;
+	public float jumpForce = 11f;
     public float moveInput;
     public float hSpeed;
     public float distanciaGameOver;
@@ -26,15 +26,27 @@ public class HeroController : MonoBehaviour {
 	private Animator anim;
     private SpriteRenderer render;
 	private bool jump;
+    private bool frenar;
     private bool dash;
+    public bool teclasalto;
     public int dashCoolDown;
 	private int jumpDelay = 0; //Cuenta fotogramas antes de saltar para que coincida con la animación.
     public int dashDelay = 0; //Cuenta fotogramas mientras dura el dash para volver a aplicar el límite de velocidad.
-    // Use this for initialization
+
+
+    public GameObject DashEffect;
+    private Vector3 DashOffset;
+
+
+    private GameManager gm;
+
     void Start () {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        transform.position = gm.lastCheckPointPos;
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
         render = GetComponent<SpriteRenderer>();
+        DashOffset = new Vector3(0, 0.2f, 0);
     }
 	
 	// Update is called once per frame
@@ -45,9 +57,13 @@ public class HeroController : MonoBehaviour {
 		
 		if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded){
 			jump = true;
+            teclasalto = true;
+            Debug.Log("akjgsdkjugsjhadg");
 		}
+        
         if (Input.GetKeyDown(KeyCode.Space) && dashCoolDown==0 && !dash)
         {
+            Instantiate(DashEffect, transform.position + DashOffset, Quaternion.identity);
             dash = true;
             dashDelay = 10;
             dashCoolDown = 100;
@@ -63,7 +79,11 @@ public class HeroController : MonoBehaviour {
         if (dashCoolDown > 0) { dashCoolDown--; render.color = new Vector4(render.color.r, render.color.g, render.color.b, 0.7f); }
         else { render.color = new Vector4(render.color.r, render.color.g, render.color.b, 1.0f); }
 
-        
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            frenar = true;
+        }
+
     }
 	
 	void FixedUpdate(){
@@ -75,12 +95,7 @@ public class HeroController : MonoBehaviour {
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, CheckRadius, whatIsGround);
         moveInput = Input.GetAxisRaw("Horizontal");
-        rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);
-
-
-        //rb2d.AddForce(Vector2.right * speed * hSpeed);
-
-        
+        rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);   
 
 		if (hSpeed > 0.1f) {
             transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -91,16 +106,22 @@ public class HeroController : MonoBehaviour {
             right = false;
         }
 		
-		if(jumpDelay>9 && isGrounded){
+		if(jumpDelay>5 && isGrounded){
             rb2d.velocity = Vector2.up * jumpForce;
 			jump = false;
 			jumpDelay = 0;  
 		}
-
+        if ((frenar || !Input.GetKey(KeyCode.UpArrow)) && rb2d.velocity.y > -0.5)
+        {
+            //Debug.Log(rb2d.velocity.y);
+            rb2d.velocity += Vector2.down * rb2d.velocity.y/20;
+            //Debug.Log(rb2d.velocity.y);
+            frenar = false;
+        }
         if (dash)
         {
-            if (right) { rb2d.AddForce(Vector2.right * jumpForce, ForceMode2D.Impulse); }
-            else { rb2d.AddForce(Vector2.left * jumpForce, ForceMode2D.Impulse); }
+            if (right) { rb2d.AddForce(Vector2.right * jumpForce*1.5f, ForceMode2D.Impulse); }
+            else { rb2d.AddForce(Vector2.left * jumpForce*1.5f, ForceMode2D.Impulse); }
             dash = false;
         }
         if (dashDelay == 0)
@@ -111,10 +132,6 @@ public class HeroController : MonoBehaviour {
         {
             rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxDashSpeed, maxDashSpeed), 0.0f);
         }
-
-        if (Mathf.Abs(rb2d.velocity.y)>0.1){
-			//Debug.Log(rb2d.velocity.y);
-		}
 
         if (SceneManager.GetActiveScene().name == "Pradera")
             distanciaGameOver = -13.0f;

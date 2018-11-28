@@ -7,7 +7,8 @@ public class vidahero : MonoBehaviour {
 //cambia a rojo el color del sprite y el enemigo (o su arma) lo empuja hacia atras	
 	
 	Rigidbody2D rb2d;
-    int cantidadVidas;
+    public int cantidadVidas;
+	Animator anim;
 
 	public float SaltoX, SaltoY;
 	private HeroController hero;
@@ -15,7 +16,10 @@ public class vidahero : MonoBehaviour {
 
 	bool invencible=false;
 
-	
+	void Awake()
+	{
+		anim = GameObject.Find ("gameover").GetComponent<Animator> ();
+	}
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
@@ -36,6 +40,7 @@ public class vidahero : MonoBehaviour {
 				corazones.cambioVida(cantidadVidas);
 				StartCoroutine (Invencible ());
 				hero.tocado = false;
+
 			}
             
 
@@ -51,11 +56,17 @@ public class vidahero : MonoBehaviour {
 
         if (cantidadVidas < 1)
         {
-            FindObjectOfType<GameManager>().EndGame();
+			anim.SetTrigger ("gameover");
+			StartCoroutine (Reiniciar());
         }
 		
 	}
 
+	IEnumerator Reiniciar()
+	{
+		yield return new WaitForSeconds (1.5f);
+		FindObjectOfType<GameManager>().EndGame();
+	}
 
 	public void  OnCollisionExit2D(Collision2D col) {		
 		if(!hero.tocado) //restablece o mantiene el color normal de CLICK
