@@ -8,6 +8,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 
 	private HeroController hero;
     private PasarNivel banderin;
+    private Animator anim;
 
     public Collider2D coll;
     public int cofre = 0;
@@ -16,6 +17,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 		
 		hero = GetComponentInParent<HeroController>();
         banderin = GetComponent<PasarNivel>();
+        anim = GetComponent<Animator>();
 	}
 
 
@@ -27,16 +29,22 @@ public class enemyPassiveAttack : MonoBehaviour {
             FindObjectOfType<GameManager>().Restart();
         }
 
-		if(col.gameObject.tag == "Enemy" && Mathf.Abs((col.transform.position.y-0.1f) - transform.position.y) < 0.2f)
+		if(col.gameObject.tag == "Enemy" && col.transform.position.y > transform.position.y+0.5)
         { //1. Si colisiona de lado. Si es asi, cambia a true la variable de HeroCOntroller
 			hero.tocado = true;	
 		}
+        if (col.gameObject.tag == "Cat")
+        {
+            Debug.Log("Tocadoooo");
+        }
+
     }
 
 	void OnCollisionExit2D(Collision2D col){
+
 		if(col.gameObject.tag == "Cat"){
 			hero.tocado = false;
-            cofre++;
+            anim.SetBool("Golpeado", false);
         }
 	
 	}

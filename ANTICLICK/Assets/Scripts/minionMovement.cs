@@ -12,6 +12,8 @@ public class minionMovement : MonoBehaviour {
     public GameObject hero;
     public HeroController herocontroller;
     public int morir= -1;
+    public GameObject blood;
+
 
     // Use this for initialization
     void Start () {
@@ -38,10 +40,14 @@ public class minionMovement : MonoBehaviour {
 			derecha = true;
 			transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
 		}
-        if (Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.2f && Mathf.Abs(hero.transform.position.y - (transform.position.y + 0.5f)) < 0.2f) //Saltar encima
+        if (Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.25f && Mathf.Abs(hero.transform.position.y - transform.position.y) < 0.2f) //Saltar encima
         {
-                morir = 1;
-                speed = 0;
+            if (morir == -1)
+            {
+                Instantiate(blood, transform.position, Quaternion.identity);
+            }
+            morir = 1;
+            speed = 0;
         }
         if (morir > 0)
         {
