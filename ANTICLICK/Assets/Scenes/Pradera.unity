@@ -27812,11 +27812,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4669674356740410, guid: 38a5ded4c04481043b6a4d7b9d482098, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.9
+      value: -2.48
       objectReference: {fileID: 0}
     - target: {fileID: 4669674356740410, guid: 38a5ded4c04481043b6a4d7b9d482098, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4669674356740410, guid: 38a5ded4c04481043b6a4d7b9d482098, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27842,6 +27842,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114410231677919788, guid: 38a5ded4c04481043b6a4d7b9d482098,
+        type: 2}
+      propertyPath: masa
+      value: 
+      objectReference: {fileID: 1671610246}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a5ded4c04481043b6a4d7b9d482098, type: 2}
   m_IsPrefabAsset: 0
@@ -30164,7 +30169,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1398498262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18208075, y: -2.1469429, z: -10.080451}
+  m_LocalPosition: {x: -1.3979194, y: -1.8969429, z: -10.080451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1220764966}
@@ -30381,7 +30386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb403a7b2ebded4493b5b72f21e5940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckPointPos: {x: -0.9, y: 1.2}
+  lastCheckPointPos: {x: -2.48, y: 1.45}
 --- !u!4 &1402894141
 Transform:
   m_ObjectHideFlags: 0
@@ -30582,7 +30587,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1472830303}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18208075, y: -2.1469429, z: -10.080451}
+  m_LocalPosition: {x: -1.3979194, y: -1.8969429, z: -10.080451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2127673201}
@@ -32502,6 +32507,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1276464402329032, guid: bc6a7f8b2feb17946ac9bd44a7453c2c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc6a7f8b2feb17946ac9bd44a7453c2c, type: 2}
   m_IsPrefabAsset: 0
@@ -33022,6 +33031,11 @@ Prefab:
       propertyPath: hero
       value: 
       objectReference: {fileID: 1566403108}
+    - target: {fileID: 114553197468359532, guid: 897dd2e35834d5149aa36e4e90c10d99,
+        type: 2}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1402894140}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 897dd2e35834d5149aa36e4e90c10d99, type: 2}
   m_IsPrefabAsset: 0

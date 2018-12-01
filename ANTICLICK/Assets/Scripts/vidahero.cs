@@ -20,6 +20,7 @@ public class vidahero : MonoBehaviour {
 	{
 		anim = GameObject.Find ("gameover").GetComponent<Animator> ();
 	}
+
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
@@ -30,7 +31,12 @@ public class vidahero : MonoBehaviour {
         corazones = GameObject.FindObjectOfType<LifeSprites>();
 	}
 
-	public void  OnCollisionEnter2D(Collision2D other) { //Si han alcanzado a CLICK, salta hacia atras y se vuelve rojo
+    public void Update()
+    {
+        corazones.cambioVida(cantidadVidas);
+    }
+
+    public void  OnCollisionEnter2D(Collision2D other) { //Si han alcanzado a CLICK, salta hacia atras y se vuelve rojo
 		if(hero.tocado)
 		{
 			GetComponent<SpriteRenderer> ().color = Color.red;
@@ -56,6 +62,7 @@ public class vidahero : MonoBehaviour {
 
         if (cantidadVidas < 1)
         {
+
 			anim.SetTrigger ("gameover");
 			StartCoroutine (Reiniciar());
         }

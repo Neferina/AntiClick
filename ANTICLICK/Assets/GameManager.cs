@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour {
         if (gameEnd)
         {
             gameEnd = false;
-            Debug.Log("Fin");
             Restart();
         }
         

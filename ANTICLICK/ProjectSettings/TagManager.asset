@@ -13,6 +13,7 @@ TagManager:
   - PasarNivel
   - checkpoint
   - GM
+  - Bufa
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ public class minionMovement : MonoBehaviour {
     public bool derecha=true;
     public GameObject hero;
     public HeroController herocontroller;
-    public int morir= -1;
+    public float morir= -1;
     public GameObject blood;
 
 
@@ -24,7 +24,7 @@ public class minionMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        anim.SetInteger("Morir", morir);
+        anim.SetFloat("Morir", morir);
         if (derecha)
 			rb2d.MovePosition (rb2d.position + Vector2.right * speed * Time.fixedDeltaTime);
 		else
@@ -51,9 +51,9 @@ public class minionMovement : MonoBehaviour {
         }
         if (morir > 0)
         {
-            morir++;
+            morir+=Time.deltaTime;
         }
-        if (morir == 22){
+        if (morir >1.6){
             Destroy(this.gameObject);
         }
     }
