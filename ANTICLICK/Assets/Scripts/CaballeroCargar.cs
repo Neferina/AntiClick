@@ -52,8 +52,8 @@ public class CaballeroCargar : MonoBehaviour
                 {
                     if (speedCargar < 3f)
                         speedCargar += 0.05f;
-                    distanciaCargar++;
-                    distancia++;
+                    distanciaCargar+=Time.fixedDeltaTime;
+                    distancia+=Time.fixedDeltaTime;
                     if (hero.transform.position.x > transform.position.x && transform.position.y > hero.transform.position.y)
                     {
                         anim.SetTrigger("isCharging");
@@ -67,7 +67,7 @@ public class CaballeroCargar : MonoBehaviour
                 {
                     anim.SetBool("CaminarDrch", true);
                     rb.MovePosition(rb.position + Vector2.right * speed * Time.fixedDeltaTime);
-                    distancia++;
+                    distancia+=Time.fixedDeltaTime;
                 }
 
             }
@@ -77,8 +77,8 @@ public class CaballeroCargar : MonoBehaviour
                 {
                     if (speedCargar < 3f)
                         speedCargar += 0.05f;
-                    distanciaCargar++;
-                    distancia++;
+                    distanciaCargar+= Time.fixedDeltaTime;
+                    distancia+= Time.fixedDeltaTime;
                     if (hero.transform.position.x < transform.position.x && transform.position.y > hero.transform.position.y)
                     {
                         anim.SetTrigger("isCharging");
@@ -92,7 +92,7 @@ public class CaballeroCargar : MonoBehaviour
                 {
                     anim.SetBool("CaminarDrch", false);
                     rb.MovePosition(rb.position + Vector2.left * speed * Time.fixedDeltaTime);
-                    distancia++;
+                    distancia+= Time.fixedDeltaTime;
                 }
 
             }
@@ -129,7 +129,7 @@ public class CaballeroCargar : MonoBehaviour
         {
             if (distanciaCargar > 0 && distanciaCargar <= 75)
             {
-                distanciaCargar++;
+                distanciaCargar+= Time.fixedDeltaTime;
             }
             else
             {
@@ -146,7 +146,7 @@ public class CaballeroCargar : MonoBehaviour
         }
         if (morir > 0)
         {
-            morir++;
+            morir+= Time.fixedDeltaTime;
         }
         if (morir == 20)
         {

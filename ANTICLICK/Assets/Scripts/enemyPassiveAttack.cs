@@ -33,6 +33,12 @@ public class enemyPassiveAttack : MonoBehaviour {
         { //1. Si colisiona de lado. Si es asi, cambia a true la variable de HeroCOntroller
 			hero.tocado = true;	
 		}
+
+        if (col.gameObject.tag == "Bufa") //Cuando la bufa saca el pincho tocarla desde cualquier punto es recibir daño
+        {
+            hero.tocado = true;
+        }
+
         if (col.gameObject.tag == "Cat")
         {
             Debug.Log("Tocadoooo");
