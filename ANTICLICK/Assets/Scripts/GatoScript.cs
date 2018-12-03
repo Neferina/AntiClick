@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GatoScript : MonoBehaviour {
 
-
+    private BoxCollider2D box;
     private Animator anim;
     public GameObject coinEffect;
     private bool hecho = false;
@@ -12,6 +12,7 @@ public class GatoScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        box = GetComponent<BoxCollider2D>();
 	}
 	
 
@@ -24,7 +25,7 @@ public class GatoScript : MonoBehaviour {
                 Instantiate(coinEffect, transform.position, Quaternion.identity);
                 hecho = true;
             }
-
+            box.enabled=false;
             anim.SetBool("Golpeado", true);
         }
     }

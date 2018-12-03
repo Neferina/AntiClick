@@ -1,14 +1,18 @@
 fileFormatVersion: 2
-guid: 09c45f687d2a49049aa911836762ebd2
+guid: bfdc979cdc0a50b479518f2515460aec
 TextureImporter:
   fileIDToRecycleName:
-    21300000: rodar (izq) (1)_0
-    21300002: rodar (izq) (1)_1
-    21300004: rodar (izq) (1)_2
-    21300006: rodar (izq) (1)_3
-    21300008: rodar (izq) (1)_4
-    21300010: rodar (izq) (1)_5
-    21300012: rodar (izq) (1)_6
+    21300000: BolaDesaparecer_0
+    21300002: BolaDesaparecer_1
+    21300004: BolaDesaparecer_2
+    21300006: BolaDesaparecer_3
+    21300008: BolaDesaparecer_4
+    21300010: BolaDesaparecer_5
+    21300012: BolaDesaparecer_6
+    21300014: BolaDesaparecer_7
+    21300016: BolaDesaparecer_8
+    21300018: BolaDesaparecer_9
+    21300020: BolaDesaparecer_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -38,7 +42,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -52,7 +56,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,17 +91,39 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rodar (izq) (1)_0
+      name: BolaDesaparecer_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 73
-        width: 32
-        height: 31
+        x: 0
+        y: 960
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6111ff5565b99934cba6cbd1ee1d39f8
+      spriteID: d326b5c13fc4d4a4492ccf1c65e8034c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_1
+      name: BolaDesaparecer_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 73
-        width: 32
-        height: 31
+        x: 192
+        y: 960
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,19 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8af814cacc100c4283205cfd7eefef9
+      spriteID: 11faee61dab9e994093258c2db1e9d98
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_2
+      name: BolaDesaparecer_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 73
-        width: 32
-        height: 31
+        x: 0
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 763d0e273e3d9874695c1a606faee6b1
+      spriteID: 2c89964dec4b6134e9476b4a4026ba36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_3
+      name: BolaDesaparecer_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 38
-        width: 32
-        height: 31
+        x: 192
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,19 +191,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28decee01904f07449a84fd4614e9bfe
+      spriteID: e49f9561a397a2e4ebdf42e95ca67d48
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_4
+      name: BolaDesaparecer_4
       rect:
         serializedVersion: 2
-        x: 36
-        y: 38
-        width: 32
-        height: 31
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,19 +211,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbf4c6350c7089c41afc25e61b78f466
+      spriteID: 77822d8d1b25fb14ca7278b9b80b6e9b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_5
+      name: BolaDesaparecer_5
       rect:
         serializedVersion: 2
-        x: 71
-        y: 38
-        width: 32
-        height: 31
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,19 +231,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf16e48390278bf468fa05f609af3921
+      spriteID: 908c3ae260a3e7c43a05d7841130b65a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rodar (izq) (1)_6
+      name: BolaDesaparecer_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 32
-        height: 31
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,7 +251,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0df32942f6cabe248956e688c217181e
+      spriteID: d67bfcea93aefb74086988a1f1ed58a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaDesaparecer_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d420a69c4f35bcf45ad00b786070afe0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaDesaparecer_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1096c4a9e5edfa54c96cae83982f4a0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaDesaparecer_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3499c925144118e4d994a93248c2e02f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaDesaparecer_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d302193d584dcb42b9d4f36bccf5288
       vertices: []
       indices: 
       edges: []
@@ -233,7 +339,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0f93231a81fb0ad4b924d61944028c1c
+    spriteID: b77c1b0e12f3e3e49a9faea5102cc42e
     vertices: []
     indices: 
     edges: []

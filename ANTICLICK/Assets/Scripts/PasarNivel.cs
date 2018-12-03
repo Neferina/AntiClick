@@ -14,12 +14,14 @@ public class PasarNivel : MonoBehaviour {
     {
         if(SceneManager.GetActiveScene().name == "Pradera")
         {
-            gm.lastCheckPointPos = new Vector2(-2.91f, -3.94f);
+            gm.lastCheckPointPos = new Vector2(-2.91f, -4.30f);
+            hero.transform.position = gm.lastCheckPointPos;
             SceneManager.LoadScene("Cueva");
+            Debug.Log(gm.lastCheckPointPos);
         }
         if (SceneManager.GetActiveScene().name == "Cueva")
         {
-            gm.lastCheckPointPos = new Vector2(-1f, -1f);
+            gm.lastCheckPointPos = new Vector2(-1f, -1.7f);
             SceneManager.LoadScene("Nieve");
         }
         if (SceneManager.GetActiveScene().name == "Nieve")

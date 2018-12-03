@@ -1,12 +1,15 @@
 fileFormatVersion: 2
-guid: acdc5e586be956e419d7533cf81fdeac
+guid: ba29002213acabe42980314118609354
 TextureImporter:
   fileIDToRecycleName:
-    21300000: volver al sitio_0
-    21300002: volver al sitio_1
-    21300004: volver al sitio_2
-    21300006: volver al sitio_3
-    21300008: volver al sitio_4
+    21300000: BolaMuerte_0
+    21300002: BolaMuerte_1
+    21300004: BolaMuerte_2
+    21300006: BolaMuerte_3
+    21300008: BolaMuerte_4
+    21300010: BolaMuerte_5
+    21300012: BolaMuerte_6
+    21300014: BolaMuerte_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -36,7 +39,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -50,7 +53,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,17 +88,39 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: volver al sitio_0
+      name: BolaMuerte_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 73
-        width: 32
-        height: 31
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,19 +128,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36d14b17c8afe6a4397c54402a0823c4
+      spriteID: 35fc712b9b3a20a4c8bd8ce30509c7d6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: volver al sitio_1
+      name: BolaMuerte_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 73
-        width: 32
-        height: 31
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,19 +148,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7911910d1328fa74db3b9b31cef1d9a7
+      spriteID: 9060361dad7170f43b7c2fc07855ba33
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: volver al sitio_2
+      name: BolaMuerte_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 38
-        width: 32
-        height: 31
+        x: 0
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +168,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e23c8783933db44b98f26abacd7eb8e
+      spriteID: bd9288fc83cb286449e43800094414d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: volver al sitio_3
+      name: BolaMuerte_3
       rect:
         serializedVersion: 2
-        x: 36
-        y: 37
-        width: 32
-        height: 32
+        x: 192
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,19 +188,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63893dfd099a2d444835a459d01d3789
+      spriteID: bb93c8e68f78b0e4d95b631c31661657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: volver al sitio_4
+      name: BolaMuerte_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 2
-        width: 32
-        height: 32
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,7 +208,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f161942344ef7ec40a9b3b9422d8adf4
+      spriteID: ac4be3edb8225024ebc0bdd11fb25265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaMuerte_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5928ba4245f7d674695362cec5a821b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaMuerte_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b903f5fc3a4a64198d42f7c8ca9704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BolaMuerte_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9ec98daa81346419f4da84795e9e1b
       vertices: []
       indices: 
       edges: []
@@ -191,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ac1994761b6530342a8c015cc82b8e5c
+    spriteID: 5bce0c1ede96eb242a3a9723ce8b30ca
     vertices: []
     indices: 
     edges: []

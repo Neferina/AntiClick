@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 61921061896428852}
   m_Layer: 0
   m_Name: Minion
-  m_TagString: Enemy
+  m_TagString: Bufa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,7 +280,7 @@ BoxCollider2D:
   m_Offset: {x: -0.011544496, y: -0.26044375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 1}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1.92, y: 1.92}
     adaptiveTilingThreshold: 0.5
@@ -324,6 +324,10 @@ MonoBehaviour:
   - {fileID: 4379159008242906}
   - {fileID: 4612422275204384}
   derecha: 1
+  hero: {fileID: 1907804786773490, guid: 38a5ded4c04481043b6a4d7b9d482098, type: 2}
+  herocontroller: {fileID: 0}
+  morir: -1
+  blood: {fileID: 0}
 --- !u!212 &212243694201291338
 SpriteRenderer:
   m_ObjectHideFlags: 1

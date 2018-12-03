@@ -32,8 +32,8 @@ public class HeroController : MonoBehaviour {
     private bool dash;
     public bool teclasalto;
     public float dashCoolDown;
-	private float jumpDelay = 0; //Cuenta fotogramas antes de saltar para que coincida con la animación.
-    public float dashDelay = 0; //Cuenta fotogramas mientras dura el dash para volver a aplicar el límite de velocidad.
+	private float jumpDelay = 0f; //Cuenta fotogramas antes de saltar para que coincida con la animación.
+    public float dashDelay = 0f; //Cuenta fotogramas mientras dura el dash para volver a aplicar el límite de velocidad.
 
 
     public GameObject DashEffect;
@@ -42,10 +42,10 @@ public class HeroController : MonoBehaviour {
 
     private GameManager gm;
 
-    void Start () {
+    void Awake () {
         Vidas = GetComponent<vidahero>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
-        transform.position = gm.lastCheckPointPos;
+        //transform.position = gm.lastCheckPointPos;
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
         render = GetComponent<SpriteRenderer>();
@@ -57,7 +57,7 @@ public class HeroController : MonoBehaviour {
 		anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
 		anim.SetBool("Ground", isGrounded);
 		anim.SetFloat("VSpeed", rb2d.velocity.y);
-		
+
 		if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded){
 			jump = true;
             teclasalto = true;
@@ -96,8 +96,8 @@ public class HeroController : MonoBehaviour {
 
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, CheckRadius, whatIsGround);
-        moveInput = Input.GetAxisRaw("Horizontal");
-        rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);   
+       // moveInput = Input.GetAxisRaw("Horizontal");
+        rb2d.velocity = new Vector2(hSpeed * speed, rb2d.velocity.y);   
 
 		if (hSpeed > 0.1f) {
             transform.localRotation = Quaternion.Euler(0f, 0f, 0f);

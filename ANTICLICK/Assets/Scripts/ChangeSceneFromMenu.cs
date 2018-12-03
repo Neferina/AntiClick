@@ -20,6 +20,9 @@ public class ChangeSceneFromMenu: MonoBehaviour {
 
 	public void CargarNivel(string escena)
     {
+        if(escena == "MenuPrincipal"){
+            GameObject.FindGameObjectWithTag("Pause").GetComponent<PauseManager>().Pause();
+        }
         SceneManager.LoadScene(escena);
     }
 
