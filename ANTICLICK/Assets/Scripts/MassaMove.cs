@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MassaMove : MonoBehaviour {
 
@@ -10,7 +11,7 @@ public class MassaMove : MonoBehaviour {
     public float ratio;
     public GameObject hero;
     public Rigidbody2D rb;
-
+    public float speedY = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,23 @@ public class MassaMove : MonoBehaviour {
         }
         rb.velocity = Vector2.right * speed;
 
+        if (SceneManager.GetActiveScene().name == "Cueva")
+        {
+            if (transform.position.x > 127f && transform.position.x<168f)
+            {
+                if(transform.position.y>-10f)
+                    rb.velocity += Vector2.down * speed;
+            }
+            else if (transform.position.x > 165f)
+            {
 
+                if (transform.position.y < -2.5f)
+                {
+                    rb.velocity = Vector2.up * speedY;
+                    rb.velocity += Vector2.right * speed;
+                }
+
+            }
+        }
 	}
 }

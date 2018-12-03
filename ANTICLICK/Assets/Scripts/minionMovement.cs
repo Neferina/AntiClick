@@ -11,7 +11,7 @@ public class minionMovement : MonoBehaviour {
     public bool derecha=true;
     public GameObject hero;
     public HeroController herocontroller;
-    public float morir= -1;
+    public float morir = -1f;
     public GameObject blood;
 
 
@@ -42,18 +42,18 @@ public class minionMovement : MonoBehaviour {
 		}
         if (Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.25f && Mathf.Abs(hero.transform.position.y - transform.position.y) < 0.2f) //Saltar encima
         {
-            if (morir == -1)
+            if (morir == -1f)
             {
                 Instantiate(blood, transform.position, Quaternion.identity);
             }
-            morir = 1;
+            morir = 1f;
             speed = 0;
         }
         if (morir > 0)
         {
             morir+=Time.deltaTime;
         }
-        if (morir >1.6){
+        if (morir > 1.6f){
             Destroy(this.gameObject);
         }
     }

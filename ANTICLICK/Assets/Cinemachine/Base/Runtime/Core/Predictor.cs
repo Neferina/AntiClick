@@ -61,7 +61,7 @@ namespace Cinemachine.Utility
             {
                 pos += vel * dt;
                 Vector3 vel2 = vel + (accel * dt);
-                accel = Quaternion.FromToRotation(vel, vel2) * accel;
+                //accel = Quaternion.FromToRotation(vel, vel2) * accel;
                 vel = vel2;
             }
             return pos;
