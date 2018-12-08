@@ -15,7 +15,9 @@ public class HeroController : MonoBehaviour {
     public float distanciaGameOver;
 
     private vidahero Vidas;
+	private playsound playSound;
     public GameObject masa;
+    public bool dead;
 
     public bool isGrounded;
     public Transform groundCheck;
@@ -30,10 +32,9 @@ public class HeroController : MonoBehaviour {
 	private bool jump;
     private bool frenar;
     private bool dash;
-    public bool teclasalto;
     public float dashCoolDown;
-	private float jumpDelay = 0f; //Cuenta fotogramas antes de saltar para que coincida con la animación.
-    public float dashDelay = 0f; //Cuenta fotogramas mientras dura el dash para volver a aplicar el límite de velocidad.
+	private float jumpDelay = 0f; //Cuenta tiempo antes de saltar para que coincida con la animación.
+    public float dashDelay = 0f; //Cuenta tiempo mientras dura el dash para volver a aplicar el límite de velocidad.
 
 
     public GameObject DashEffect;
@@ -44,6 +45,7 @@ public class HeroController : MonoBehaviour {
 
     void Awake () {
         Vidas = GetComponent<vidahero>();
+		playSound = GetComponent<playsound> ();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         //transform.position = gm.lastCheckPointPos;
 		rb2d = GetComponent<Rigidbody2D>();
@@ -54,49 +56,63 @@ public class HeroController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
-		anim.SetBool("Ground", isGrounded);
-		anim.SetFloat("VSpeed", rb2d.velocity.y);
 
-		if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded){
-			jump = true;
-            teclasalto = true;
-		}
-        
-        if (Input.GetKeyDown(KeyCode.Space) && dashCoolDown==0 && !dash)
+        anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        anim.SetBool("Ground", isGrounded);
+        anim.SetFloat("VSpeed", rb2d.velocity.y);
+        anim.SetBool("Dead", dead);
+
+        if (!dead)
         {
-            Instantiate(DashEffect, transform.position + DashOffset, Quaternion.identity);
-            dash = true;
-            dashDelay = 10;
-            dashCoolDown = 100;
+            if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+            {
+                jump = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space) && dashCoolDown == 0 && !dash)
+            {
+                Instantiate(DashEffect, transform.position + DashOffset, Quaternion.identity);
+                dash = true;
+                dashDelay = 0.2f;
+                dashCoolDown = 100;
+				playSound.PlayDash ();
+            }
+            if (dash || dashDelay > 0) { dashDelay-= Time.deltaTime; }
+            if (jump && isGrounded)
+            {
+                jumpDelay += Time.deltaTime;
+            }
+
+            if (dashCoolDown > 0) { dashCoolDown--; render.color = new Vector4(render.color.r, render.color.g, render.color.b, 0.7f); }
+            else { render.color = new Vector4(render.color.r, render.color.g, render.color.b, 1.0f); }
+
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                frenar = true;
+            }
         }
-        if (dash || dashDelay>0){dashDelay--;}
-        if (jump && isGrounded)
-        {
-            jumpDelay +=Time.deltaTime;
-		}
-		anim.SetBool("Jump", jump);
+
+        anim.SetBool("Jump", jump);
         anim.SetBool("Dash", dash);
-        anim.SetFloat("DashDelay", dashDelay);
-        if (dashCoolDown > 0) { dashCoolDown--; render.color = new Vector4(render.color.r, render.color.g, render.color.b, 0.7f); }
-        else { render.color = new Vector4(render.color.r, render.color.g, render.color.b, 1.0f); }
-
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-        {
-            frenar = true;
-        }
-
+        anim.SetFloat("DelayDash", dashDelay);
     }
 	
 	void FixedUpdate(){
 
-        
 
-        hSpeed = Input.GetAxisRaw("Horizontal");
+
+        if (dead)
+        {
+            hSpeed = 0.0f;
+            rb2d.Sleep();
+        }
+        else
+        {
+            hSpeed = Input.GetAxisRaw("Horizontal");
+        }
 
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, CheckRadius, whatIsGround);
-       // moveInput = Input.GetAxisRaw("Horizontal");
         rb2d.velocity = new Vector2(hSpeed * speed, rb2d.velocity.y);   
 
 		if (hSpeed > 0.1f) {
@@ -124,7 +140,7 @@ public class HeroController : MonoBehaviour {
             else { rb2d.AddForce(Vector2.left * jumpForce*1.5f, ForceMode2D.Impulse); }
             dash = false;
         }
-        if (dashDelay == 0)
+        if (dashDelay <= 0)
         {
             rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed), rb2d.velocity.y);
         }

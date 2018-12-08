@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 114193984618351138}
   - component: {fileID: 58006044357684548}
   - component: {fileID: 61750508233659978}
+  - component: {fileID: 82671034174509108}
+  - component: {fileID: 114401004261817932}
   m_Layer: 0
   m_Name: Click
   m_TagString: Player
@@ -70,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1907804786773490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.48, y: 1.45, z: 0}
+  m_LocalPosition: {x: -1.76, y: -0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274248893624128}
@@ -137,6 +139,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.54}
   m_EdgeRadius: 0
+--- !u!82 &82671034174509108
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907804786773490}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.697
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95348117309370132
 Animator:
   serializedVersion: 3
@@ -167,9 +264,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadVidas: 0
-  SaltoX: -10
-  SaltoY: 3
+  SaltoX: 10
+  SaltoY: 5
   corazones: {fileID: 0}
+  DeathDelay: 0.8
 --- !u!114 &114264175103115002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +281,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coll: {fileID: 0}
   cofre: 0
+--- !u!114 &114401004261817932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907804786773490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46bc98521c9e03648ab56485e867d458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salto: {fileID: 8300000, guid: 1fd1d6f3b377a3c41b93fbf087b31caa, type: 3}
+  monedas: {fileID: 8300000, guid: 6705ea64ea4c9bd4582114b368882514, type: 3}
+  dash: {fileID: 8300000, guid: bf491fa35d6514f4fa406a98e5d865bb, type: 3}
+  muerte: {fileID: 0}
+  respects: {fileID: 8300000, guid: b91199925d4618042a31c500931aca13, type: 3}
 --- !u!114 &114410231677919788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +318,7 @@ MonoBehaviour:
   hSpeed: 0
   distanciaGameOver: 0
   masa: {fileID: 0}
+  dead: 0
   isGrounded: 0
   groundCheck: {fileID: 4274248893624128}
   CheckRadius: 0.2
@@ -211,7 +326,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   tocado: 0
-  teclasalto: 0
   dashCoolDown: 0
   dashDelay: 0
   DashEffect: {fileID: 1087272566330098, guid: 9cc95e50ef656704ba87ef20815a0f2f, type: 2}

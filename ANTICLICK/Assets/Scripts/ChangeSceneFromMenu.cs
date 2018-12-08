@@ -6,24 +6,30 @@ using UnityEditor;
 
 public class ChangeSceneFromMenu: MonoBehaviour {
 
-    
+    private string actual;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
+
 	
 	// Update is called once per frame
 	void Update () {
-		
+        actual = SceneManager.GetActiveScene().name;
 	}
 
 	public void CargarNivel(string escena)
     {
-        if(escena == "MenuPrincipal"){
-            GameObject.FindGameObjectWithTag("Pause").GetComponent<PauseManager>().Pause();
+        if (actual == "Pradera" || actual == "Cueva" || actual == "Castillo" || actual == "Nieve")
+        {
+            if (escena == "MenuPrincipal")
+            {
+                GameObject.FindGameObjectWithTag("Pause").GetComponent<PauseManager>().Pause();
+            }
         }
+
+
         SceneManager.LoadScene(escena);
+
     }
+
+
 
 }

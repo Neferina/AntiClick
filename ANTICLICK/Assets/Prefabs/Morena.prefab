@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 95426926322123124}
   m_Layer: 0
   m_Name: morder_0
-  m_TagString: Enemy
+  m_TagString: Bufa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 95222744573522100}
   m_Layer: 0
   m_Name: Morena
-  m_TagString: Bufa
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,7 @@ public class MassaMove : MonoBehaviour {
     private float speed = 2.5f;
     public float minSpeed;
     public float ratio;
+    public float maxSpeed;
     public GameObject hero;
     public Rigidbody2D rb;
     public float speedY = 2f;
@@ -22,7 +23,7 @@ public class MassaMove : MonoBehaviour {
 	void Update () {
         if (Mathf.Abs(hero.transform.position.x - transform.position.x) > 12)
         {
-            speed = Mathf.Abs(hero.transform.position.x - transform.position.x) / 3 +  5f;
+            speed = Mathf.Min(Mathf.Abs(hero.transform.position.x - transform.position.x) / 3 + 5f, maxSpeed);
         }
         else{
             speed = Mathf.Abs(hero.transform.position.x - transform.position.x) / ratio + minSpeed;
@@ -47,5 +48,42 @@ public class MassaMove : MonoBehaviour {
 
             }
         }
-	}
+
+        if (SceneManager.GetActiveScene().name == "Nieve")
+        {
+            if (transform.position.x > 37f)
+            {
+                if (transform.position.y > -12f)
+                {
+                  rb.velocity += Vector2.down * speedY;
+                }
+            }
+
+            if (transform.position.x > 124f && transform.position.x < 37f)
+            {
+                if (transform.position.y > -17f)
+                {
+                    rb.velocity += Vector2.down * speedY;
+                }
+            }
+
+            if (transform.position.x > 155f && transform.position.x < 124f)
+            {
+                if (transform.position.y < -10f)
+                {
+                    rb.velocity += Vector2.up * speedY;
+                }
+            }
+
+            if (transform.position.x > 380f && transform.position.x < 155f)
+            {
+                if (transform.position.y > -50f)
+                {
+                    Debug.Log("xD");
+                    rb.velocity += Vector2.down * speedY;
+                }
+            }
+        }
+
+    }
 }
