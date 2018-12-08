@@ -19,7 +19,10 @@ public class LifeSprites : MonoBehaviour {
 
     public void cambioVida(int posicion)
     {
-        this.GetComponent<Image>().sprite = corazones[posicion];
+        if (posicion > -1)
+        {
+            this.GetComponent<Image>().sprite = corazones[posicion];
+        }
     }
 
 }

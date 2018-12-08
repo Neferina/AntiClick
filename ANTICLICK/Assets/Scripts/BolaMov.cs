@@ -46,7 +46,7 @@ public class BolaMov : MonoBehaviour {
         if (triggerTime > 1f)
         {
             box.isTrigger = false;
-            speed = 1;
+            speed = 2f;
             moviendose = true;
         }
         if (triggerTime > 0.9f)
@@ -76,6 +76,7 @@ public class BolaMov : MonoBehaviour {
         }
         if (muerto == true)
         {
+            box.enabled = false;
             triggerTime = 0;
             moviendose = false;
             speed = 0;

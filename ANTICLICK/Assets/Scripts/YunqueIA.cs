@@ -17,6 +17,8 @@ public class YunqueIA : MonoBehaviour {
     private float speed; //Establece la velocidad de caida
     private float esperarMuerte; //Cuando toca el suelo tarda un poco en desaparecer
 
+    private BoxCollider2D box;
+
     // Use this for initialization
     void Start () {
         if (destino != null) //Esto es para que el destino deje de ser hijo del yunque y este no este infinitamente cayendo
@@ -24,8 +26,10 @@ public class YunqueIA : MonoBehaviour {
             destino.parent = null; //Aquí es cuando hago lo comentado arriba
             this.gameObject.GetComponent<SpriteRenderer>().sprite = aire; //Cambio el sprite a cayendo
             caer = false; //Aun no debe caer
-            speed = 6; //Velocidad del yunque
+            speed = 5; //Velocidad del yunque
         }
+
+        box = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -44,6 +48,7 @@ public class YunqueIA : MonoBehaviour {
             {
                 this.gameObject.GetComponent<SpriteRenderer>().sprite = tierra; //Cambia el sprite al de tierra cuando llega al suelo
                 esperarMuerte += Time.deltaTime;
+                box.enabled = false;
                 if (esperarMuerte >= 2.0f) //Cuando pasa este tiempo desaparece el enemigo
                     Destroy(this.gameObject);
             }

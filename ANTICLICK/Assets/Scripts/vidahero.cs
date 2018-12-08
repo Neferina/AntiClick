@@ -9,10 +9,13 @@ public class vidahero : MonoBehaviour {
 	Rigidbody2D rb2d;
     public int cantidadVidas;
 	Animator anim;
+    Animator heroAnim;
 
 	public float SaltoX, SaltoY;
+    private bool salto = true;
 	private HeroController hero;
     public LifeSprites corazones;
+    public float DeathDelay = 0.8f;
 
 	bool invencible=false;
 
@@ -24,8 +27,7 @@ public class vidahero : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
-		hero = GetComponentInParent<HeroController>(); //Necesita acceder a HeroController para comprobar si 
-                                                       //su variable "tocado" es true o false
+		hero = GetComponentInParent<HeroController>(); //Necesita acceder a HeroController para comprobar si su variable "tocado" es true o false                       
 
         cantidadVidas = 3;
         corazones = GameObject.FindObjectOfType<LifeSprites>();
@@ -34,38 +36,62 @@ public class vidahero : MonoBehaviour {
     public void Update()
     {
         corazones.cambioVida(cantidadVidas);
+
+        if (cantidadVidas < 1)
+        {
+            hero.dead = true;
+            GetComponent<SpriteRenderer>().color = Color.white;
+            DeathDelay -= Time.deltaTime;
+        }
+
+        if (DeathDelay <= 0)
+        {
+            anim.SetTrigger("gameover");
+            StartCoroutine(Reiniciar());
+            hero.dead = false;
+        }
+
+        if (!hero.tocado) //restablece o mantiene el color normal de CLICK
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+        }
+
+        if(rb2d.velocity.y < 0.1 && hero.isGrounded && !salto)
+        {
+            salto = true;
+            hero.tocado = false;
+            invencible = false;
+        }
     }
 
     public void  OnCollisionEnter2D(Collision2D other) { //Si han alcanzado a CLICK, salta hacia atras y se vuelve rojo
-		if(hero.tocado)
+		if(hero.tocado && !hero.dead)
 		{
 			GetComponent<SpriteRenderer> ().color = Color.red;
 			if (!invencible) {
 				cantidadVidas--;
 				Debug.Log ("Tocado");
 				corazones.cambioVida(cantidadVidas);
-				StartCoroutine (Invencible ());
-				hero.tocado = false;
-
-			}
+                invencible = true;
+                //StartCoroutine (Invencible ());
+            }
             
 
-            if (hero.right)
-            {
-                rb2d.velocity = new Vector2(SaltoX, SaltoY);
-            }else if(hero.right != true)
+            if (hero.right && salto)
             {
                 rb2d.velocity = new Vector2(-SaltoX, SaltoY);
+                salto = false;
+
+            }
+            else if(!hero.right && salto)
+            {
+                rb2d.velocity = new Vector2(SaltoX, SaltoY);
+                salto = false;
             }
 
         }
 
-        if (cantidadVidas < 1)
-        {
 
-			anim.SetTrigger ("gameover");
-			StartCoroutine (Reiniciar());
-        }
 		
 	}
 
@@ -75,20 +101,12 @@ public class vidahero : MonoBehaviour {
 		FindObjectOfType<GameManager>().EndGame();
 	}
 
-	public void  OnCollisionExit2D(Collision2D col) {		
-		if(!hero.tocado) //restablece o mantiene el color normal de CLICK
-		{
-			GetComponent<SpriteRenderer> ().color = Color.white;
-
-
-		}
-
-	}
-
-	IEnumerator Invencible()
+    /*
+    IEnumerator Invencible()
 	{
 		invencible = true;
-		yield return new WaitForSeconds (1.5f);
+		yield return new WaitForSeconds (1.8f);
 		invencible = false;
-	}
+    }
+    */
 }
