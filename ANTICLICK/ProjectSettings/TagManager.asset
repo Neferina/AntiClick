@@ -17,6 +17,7 @@ TagManager:
   - Pause
   - Win
   - monedas
+  - platMovil
   layers:
   - Default
   - TransparentFX

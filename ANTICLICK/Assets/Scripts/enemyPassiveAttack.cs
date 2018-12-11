@@ -8,7 +8,6 @@ public class enemyPassiveAttack : MonoBehaviour {
 
 	private HeroController hero;
     private PasarNivel banderin;
-    private Animator anim;
 
     public Collider2D coll;
     public int cofre = 0;
@@ -17,8 +16,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 		
 		hero = GetComponentInParent<HeroController>();
         banderin = GetComponent<PasarNivel>();
-        anim = GetComponent<Animator>();
-	}
+    }
 
 
     void OnCollisionEnter2D(Collision2D col){ //Si colisiona con CLICK comprueba:
@@ -26,7 +24,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 
         if(col.gameObject.tag == "massa")
         {
-            FindObjectOfType<GameManager>().Restart();
+            hero.Vidas.cantidadVidas = 0;
         }
 
 		if(col.gameObject.tag == "Enemy" && col.transform.position.y > transform.position.y+0.5)
@@ -39,10 +37,9 @@ public class enemyPassiveAttack : MonoBehaviour {
             hero.tocado = true;
         }
 
-        if (col.gameObject.tag == "Cat")
+        /*if (col.gameObject.tag == "Cat")
         {
-            Debug.Log("Tocadoooo");
-        }
+        }*/
 
     }
 
@@ -50,7 +47,7 @@ public class enemyPassiveAttack : MonoBehaviour {
 
 		if(col.gameObject.tag == "Cat"){
 			hero.tocado = false;
-            anim.SetBool("Golpeado", false);
+            //anim.SetBool("Golpeado", false);
         }
 	
 	}

@@ -35,10 +35,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4063800915973560}
   - component: {fileID: 212500176145031174}
-  - component: {fileID: 61686053429396110}
   - component: {fileID: 95227959462864984}
   - component: {fileID: 50884746652725656}
   - component: {fileID: 114389968446222942}
+  - component: {fileID: 60883601743801724}
   m_Layer: 0
   m_Name: Esqueleto
   m_TagString: Enemy
@@ -72,7 +72,7 @@ GameObject:
   m_Layer: 0
   m_Name: limitederecha
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1827792291544376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8862047, y: -3.06, z: 0}
+  m_LocalPosition: {x: 5.8862047, y: -3.06, z: 0.46739194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4287902539983226}
@@ -151,8 +151,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61686053429396110
-BoxCollider2D:
+--- !u!60 &60883601743801724
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 1}
@@ -173,9 +173,47 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.77, y: 0.99}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.1566577, y: -0.005191326}
+      - {x: -0.10703373, y: -0.002595663}
+      - {x: -0.15551615, y: -0.09968352}
+      - {x: -0.190063, y: -0.24123263}
+      - {x: -0.17375326, y: -0.28129077}
+      - {x: -0.17792273, y: -0.36175728}
+      - {x: -0.2822938, y: -0.36767125}
+      - {x: -0.36242962, y: -0.4348023}
+      - {x: -0.43305779, y: -0.5093565}
+      - {x: -0.45816183, y: -0.5627694}
+      - {x: -0.47404337, y: -0.6851082}
+      - {x: -0.42098618, y: -0.7044456}
+      - {x: -0.3766055, y: -0.6726887}
+      - {x: -0.35023594, y: -0.51287794}
+      - {x: -0.2910881, y: -0.47187352}
+      - {x: -0.2761836, y: -0.5618932}
+      - {x: -0.25103378, y: -0.57256913}
+      - {x: -0.25302505, y: -0.62650967}
+      - {x: -0.22471571, y: -0.6358452}
+      - {x: -0.22815752, y: -0.70189023}
+      - {x: -0.24659634, y: -0.7344451}
+      - {x: -0.2342124, y: -0.7756705}
+      - {x: -0.2726593, y: -0.81770706}
+      - {x: -0.30797672, y: -0.8830488}
+      - {x: -0.30741167, y: -0.9408903}
+      - {x: -0.21925974, y: -0.9377036}
+      - {x: -0.18115187, y: -0.8140125}
+      - {x: -0.09904623, y: -0.8205619}
+      - {x: -0.07187128, y: -0.84443426}
+      - {x: -0.057187557, y: -0.9312475}
+      - {x: 0.00030565262, y: -0.9428954}
+      - {x: 0.009877682, y: -0.82099986}
+      - {x: 0.067997456, y: -0.7995217}
+      - {x: 0.006760597, y: -0.67885065}
+      - {x: 0.030182362, y: -0.5533328}
+      - {x: 0.036884785, y: -0.41339493}
+      - {x: 0.21386433, y: -0.41444468}
+      - {x: 0.25980806, y: -0.12898874}
+      - {x: 0.20088577, y: -0.0625}
 --- !u!95 &95227959462864984
 Animator:
   serializedVersion: 3
@@ -217,6 +255,7 @@ MonoBehaviour:
   hueso: {fileID: 1816211233395294, guid: 42f2e6f046e66644ab79f7ac19b76300, type: 2}
   huesoDerecho: {fileID: 1724014762462432, guid: 25cc5a8cc2a3fbc49ad8914c4e4c8297,
     type: 2}
+  distanceDead: 0.5
 --- !u!212 &212500176145031174
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -38,8 +38,7 @@ GameObject:
   - component: {fileID: 95134247312853138}
   - component: {fileID: 50664378964822416}
   - component: {fileID: 114845015278303240}
-  - component: {fileID: 60618751551807926}
-  - component: {fileID: 61524346284873888}
+  - component: {fileID: 60914266982159432}
   m_Layer: 0
   m_Name: pollo
   m_TagString: Enemy
@@ -143,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1857241347445722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 117.230515, y: -3.9887075, z: 0}
+  m_LocalPosition: {x: -24.61708, y: 0.028044343, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4873175671836710}
@@ -211,13 +210,13 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &60618751551807926
+--- !u!60 &60914266982159432
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1729589122486586}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -235,15 +234,39 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.12731574, y: -0.45811272}
-      - {x: 0.041887514, y: -0.113701105}
-      - {x: -0.1572435, y: -0.17553997}
-      - {x: -0.16887261, y: -0.4262011}
-      - {x: -0.25132155, y: -0.94780636}
-      - {x: -0.3125, y: -0.96875}
-      - {x: 0.15625, y: -0.96875}
-      - {x: 0.21875, y: -0.90625}
-      - {x: 0.34375, y: -0.59375}
+    - - {x: 0.28377938, y: -0.5678743}
+      - {x: 0.27491593, y: -0.5241324}
+      - {x: 0.13427947, y: -0.52173686}
+      - {x: 0.04753708, y: -0.45513225}
+      - {x: 0.093567125, y: -0.40217996}
+      - {x: 0.09440445, y: -0.33163917}
+      - {x: 0.090618365, y: -0.22359002}
+      - {x: 0.002527466, y: -0.096437216}
+      - {x: -0.0935495, y: -0.096437216}
+      - {x: -0.17523362, y: -0.2122246}
+      - {x: -0.18465401, y: -0.2524879}
+      - {x: -0.15741898, y: -0.25977278}
+      - {x: -0.1557386, y: -0.45920825}
+      - {x: -0.21260811, y: -0.47527194}
+      - {x: -0.2665155, y: -0.537042}
+      - {x: -0.28091598, y: -0.64614916}
+      - {x: -0.25622916, y: -0.66651464}
+      - {x: -0.24728943, y: -0.68581533}
+      - {x: -0.21954133, y: -0.6897328}
+      - {x: -0.2150705, y: -0.7241646}
+      - {x: -0.24544121, y: -0.75511324}
+      - {x: -0.2529161, y: -0.81771076}
+      - {x: -0.27852416, y: -0.88274264}
+      - {x: -0.27338576, y: -0.90617025}
+      - {x: -0.16724946, y: -0.9052253}
+      - {x: 0.15885757, y: -0.90617025}
+      - {x: 0.16138671, y: -0.90364254}
+      - {x: 0.1474192, y: -0.8789933}
+      - {x: 0.12871002, y: -0.8762326}
+      - {x: 0.1277201, y: -0.7559186}
+      - {x: 0.098919146, y: -0.74029803}
+      - {x: 0.10003304, y: -0.62523365}
+      - {x: 0.24466537, y: -0.62243235}
 --- !u!61 &61117414454322616
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -268,31 +291,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.49}
-  m_EdgeRadius: 0
---- !u!61 &61524346284873888
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729589122486586}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.76}
   m_EdgeRadius: 0
 --- !u!95 &95134247312853138
 Animator:
@@ -334,6 +332,7 @@ MonoBehaviour:
   type: 
   hueso: {fileID: 0}
   huesoDerecho: {fileID: 0}
+  distanceDead: 0.5
 --- !u!212 &212897993054215490
 SpriteRenderer:
   m_ObjectHideFlags: 1
