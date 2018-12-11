@@ -36,9 +36,9 @@ GameObject:
   - component: {fileID: 4972380923494046}
   - component: {fileID: 212969717339493032}
   - component: {fileID: 95119615763890920}
-  - component: {fileID: 61970231147754998}
   - component: {fileID: 50553126322494904}
   - component: {fileID: 114670960389061806}
+  - component: {fileID: 60968948205785232}
   m_Layer: 0
   m_Name: Caballero
   m_TagString: Enemy
@@ -151,8 +151,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61970231147754998
-BoxCollider2D:
+--- !u!60 &60968948205785232
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06, y: -0.52}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 1}
@@ -172,10 +172,31 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
-  serializedVersion: 2
-  m_Size: {x: 0.78, y: 0.95}
-  m_EdgeRadius: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.23601723, y: -0.08844054}
+      - {x: 0.17643547, y: -0.1675179}
+      - {x: 0.12516212, y: -0.07376766}
+      - {x: -0.21599388, y: -0.07376766}
+      - {x: -0.27912426, y: -0.16516542}
+      - {x: -0.38367462, y: -0.38622725}
+      - {x: -0.3595314, y: -0.5349257}
+      - {x: -0.4784336, y: -0.5931729}
+      - {x: -0.43916035, y: -0.6709709}
+      - {x: -0.39753342, y: -0.73435974}
+      - {x: -0.41519165, y: -0.86249936}
+      - {x: -0.3238678, y: -0.82807815}
+      - {x: -0.25592136, y: -0.8993621}
+      - {x: -0.30633068, y: -0.95671284}
+      - {x: -0.309906, y: -0.97438395}
+      - {x: -0.17080116, y: -0.974465}
+      - {x: 0.052176476, y: -0.9687947}
+      - {x: 0.27277946, y: -0.9262322}
+      - {x: 0.2842493, y: -0.7415694}
+      - {x: 0.33815575, y: -0.68174446}
+      - {x: 0.28055286, y: -0.60889685}
+      - {x: 0.27569675, y: -0.13975394}
 --- !u!95 &95119615763890920
 Animator:
   serializedVersion: 3
@@ -216,6 +237,7 @@ MonoBehaviour:
   type: Caballero
   hueso: {fileID: 0}
   huesoDerecho: {fileID: 0}
+  distanceDead: 0.5
 --- !u!212 &212969717339493032
 SpriteRenderer:
   m_ObjectHideFlags: 1

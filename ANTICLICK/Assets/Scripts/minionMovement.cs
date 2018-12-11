@@ -19,7 +19,8 @@ public class minionMovement : MonoBehaviour {
     private bool resetCD = true; //para resetear el CD del hueso
     public GameObject hueso;
     public GameObject huesoDerecho;
-    private BoxCollider2D box;
+    private PolygonCollider2D box;
+    public float distanceDead;
 
 
 
@@ -28,8 +29,8 @@ public class minionMovement : MonoBehaviour {
     void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        box = GetComponent<BoxCollider2D>();
-	
+        box = GetComponent<PolygonCollider2D>();
+
     }
 
     // Update is called once per frame
@@ -62,17 +63,9 @@ public class minionMovement : MonoBehaviour {
             if (type == "Caballero" && alterMode) { Frenar(); }
             //transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
         }
-        if (Mathf.Abs(hero.transform.position.x - transform.position.x) < 0.3f && Mathf.Abs(hero.transform.position.y - transform.position.y) < 0.2f) //Saltar encima
-        {
-			
-            if (morir == -1f)
-            {
-                Instantiate(blood, transform.position, Quaternion.identity);
 
-            }
-            morir = 1f;
-            speed = 0;
-        }
+
+
         if (morir > 0)
         {
             box.enabled = false;
@@ -167,5 +160,25 @@ public class minionMovement : MonoBehaviour {
     {
         alterMode = false;
         cooldown = 2.0f;
+    }
+
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (Mathf.Abs(hero.transform.position.y - transform.position.y) < distanceDead) //Saltar encima
+            {
+
+                if (morir == -1f)
+                {
+                    Instantiate(blood, transform.position, Quaternion.identity);
+
+                }
+                morir = 1f;
+                speed = 0;
+            }
+        }
+
     }
 }

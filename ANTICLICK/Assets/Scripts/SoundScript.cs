@@ -7,6 +7,7 @@ public class SoundScript : MonoBehaviour {
     public GameObject hero;
     public GameObject masa;
     public float limite;
+    public bool funcionar = true;
     private AudioSource fuente;
     private Vector3 posicion;
 	// Use this for initialization
@@ -17,6 +18,13 @@ public class SoundScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
     {
-        fuente.volume = 1.0f - Mathf.Abs(hero.transform.position.x - masa.transform.position.x) / limite;
+        if (funcionar)
+        {
+            fuente.volume = 1.0f - Mathf.Abs(hero.transform.position.x - masa.transform.position.x) / limite;
+        }
+        else
+        {
+            fuente.volume -= Time.deltaTime*0.9f;
+        }
     }
 }
