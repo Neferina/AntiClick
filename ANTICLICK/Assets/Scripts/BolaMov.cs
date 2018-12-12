@@ -46,7 +46,7 @@ public class BolaMov : MonoBehaviour {
         if (triggerTime > 1f)
         {
             box.isTrigger = false;
-            speed = 2f;
+            speed = 6f;
             moviendose = true;
         }
         if (triggerTime > 0.9f)
@@ -92,7 +92,7 @@ public class BolaMov : MonoBehaviour {
             
         }
 
-        if (distance > 3f)
+        if (distance > 1f)
         {
             moviendose = false;
             distance = 0;
